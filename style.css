@@ -103,7 +103,7 @@ body {
     border: none;
     border-radius: 6px;
     font-size: 0.9rem;s
-    font-weight: 700;
+    font-weight: 700; 
 }
 
 .right button:hover {
@@ -121,4 +121,13 @@ body {
 
 .right .log_in a {
     color: var(--btn-color);
+}
+
+#user_password:invalid, #conf_password:invalid {
+    border: solid 1px red;
+}
+
+input:focus, #user_password:focus, #conf_password:focus {
+    border: none;
+    outline: solid 2px blue;
 }
